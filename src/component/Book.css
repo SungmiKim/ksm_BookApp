@@ -1,0 +1,36 @@
+.book__data img {
+  width: 100px;
+  height: 130px;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.book__data {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.book__data-rank {
+  margin-right: 10px;
+  color: black;
+  font-weight: 700;
+}
+
+.book__data-title {
+  color: white;
+  font-size: small;
+  margin-top: 7px;
+  width: 100px;
+}
+
+.book a {
+  text-decoration: none;
+}
+
+.book__data_img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
+
+.about__container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 2fr;
+  margin: 0 auto;
+  margin-top: 100px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px rgba(0, 0, 0, 0.25);
+  height: auto;
+}
+
+.about__container img {
+  position: relative;
+  top: -50px;
+  left: 30px;
+  width: 200px;
+  height: 300px;
+
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.25);
+}
+
+.books__data {
+  margin-right: 30px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.book__priceStandard {
+  text-decoration: line-through;
+}
+
+.books__data .books__title {
+  font-size: x-large;
+}
+
+.book__description-title {
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+.book__priceSales {
+  color: red;
+  font-weight: bold;
+}
+
+.book__sale {
+  text-align: end;
+}
+
+.books__data a {
+  text-decoration: none;
+  text-align: end;
+  color: #2d3436;
+}
+.book__sale span {
+  background-color: #b2bec3;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.book__description {
+  margin-bottom: 30px;
+  line-height: 19px;
+}
