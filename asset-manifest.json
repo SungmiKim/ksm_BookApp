@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ksm_bookapp/static/css/main.9ceba25d.chunk.css",
+    "main.js": "/ksm_bookapp/static/js/main.5f820f5f.chunk.js",
+    "main.js.map": "/ksm_bookapp/static/js/main.5f820f5f.chunk.js.map",
+    "runtime-main.js": "/ksm_bookapp/static/js/runtime-main.dccc6b0e.js",
+    "runtime-main.js.map": "/ksm_bookapp/static/js/runtime-main.dccc6b0e.js.map",
+    "static/js/2.9a17b7d9.chunk.js": "/ksm_bookapp/static/js/2.9a17b7d9.chunk.js",
+    "static/js/2.9a17b7d9.chunk.js.map": "/ksm_bookapp/static/js/2.9a17b7d9.chunk.js.map",
+    "index.html": "/ksm_bookapp/index.html",
+    "precache-manifest.f1d31768e33457fa4e160988a3a6e45e.js": "/ksm_bookapp/precache-manifest.f1d31768e33457fa4e160988a3a6e45e.js",
+    "service-worker.js": "/ksm_bookapp/service-worker.js",
+    "static/css/main.9ceba25d.chunk.css.map": "/ksm_bookapp/static/css/main.9ceba25d.chunk.css.map",
+    "static/js/2.9a17b7d9.chunk.js.LICENSE.txt": "/ksm_bookapp/static/js/2.9a17b7d9.chunk.js.LICENSE.txt",
+    "static/media/wall-bookshelf.png": "/ksm_bookapp/static/media/wall-bookshelf.7e32b167.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dccc6b0e.js",
+    "static/js/2.9a17b7d9.chunk.js",
+    "static/css/main.9ceba25d.chunk.css",
+    "static/js/main.5f820f5f.chunk.js"
+  ]
+}
