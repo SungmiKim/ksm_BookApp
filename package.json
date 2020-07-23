@@ -2,6 +2,7 @@
   "name": "ksm_bookapp",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://book.interpark.com",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -15,7 +16,6 @@
     "react-scripts": "3.4.1",
     "xml-to-json-promise": "0.0.3"
   },
-  "proxy": "http://book.interpark.com/api",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

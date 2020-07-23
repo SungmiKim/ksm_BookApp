@@ -18,7 +18,7 @@ class cate_126 extends React.Component {
       "86B493B8DCEB7413E1BAA34E236A4079861491A960C7FCB705D8887DD30AC580";
     const {
       data: { item: books },
-    } = await axios.get("/bestSeller.api", {
+    } = await axios.get("/api/bestSeller.api", {
       params: {
         key: key,
         categoryId: 126,
@@ -54,155 +54,306 @@ class cate_126 extends React.Component {
       books_five,
       books_six,
     } = this.state;
+
     return (
       <section className="container">
-        <span className="title_name">베스트셀러 : 국내도서 &gt; 건강/뷰티</span>
+        <div className="title_name_wrap">
+          <span className="title_name">
+            베스트셀러: 국내도서 &gt; 건강 / 뷰티
+          </span>
+        </div>
         {isLoading ? (
           <div className="loader">
             <span className="loader__text">Loading...</span>
           </div>
         ) : (
           <div className="bookshelf">
-            <div className="bookshelf_one">
-              <div className="books">
-                {books_one.map((books) => {
-                  return (
-                    <Book
-                      key={books.rank}
-                      cover={books.coverLargeUrl}
-                      rank={books.rank}
-                      title={books.title}
-                      description={books.description}
-                      priceStandard={books.priceStandard}
-                      priceSales={books.priceSales}
-                      author={books.author}
-                      sale={books.link}
-                      customerReviewRank={books.customerReviewRank}
-                    ></Book>
-                  );
-                })}
-                <img
-                  src={require("../images/wall-bookshelf.png")}
-                  className="bookshelf_img"
-                  alt="bookshelf_img"
-                />
+            <div className="media_full bookshelf">
+              <div className="bookshelf_one">
+                <div className="books">
+                  {books_one.map((books) => {
+                    return (
+                      <Book
+                        key={books.rank}
+                        cover={books.coverLargeUrl}
+                        rank={books.rank}
+                        title={books.title}
+                        description={books.description}
+                        priceStandard={books.priceStandard}
+                        priceSales={books.priceSales}
+                        author={books.author}
+                        sale={books.link}
+                        customerReviewRank={books.customerReviewRank}
+                      ></Book>
+                    );
+                  })}
+                  <img
+                    src={require("../images/wall-bookshelf.png")}
+                    className="bookshelf_img"
+                    alt="bookshelf_img"
+                  />
+                </div>
+                <div className="books">
+                  {books_three.map((books) => {
+                    return (
+                      <Book
+                        key={books.rank}
+                        cover={books.coverLargeUrl}
+                        rank={books.rank}
+                        title={books.title}
+                        description={books.description}
+                        priceStandard={books.priceStandard}
+                        priceSales={books.priceSales}
+                        author={books.author}
+                        sale={books.link}
+                        customerReviewRank={books.customerReviewRank}
+                      ></Book>
+                    );
+                  })}
+                  <img
+                    src={require("../images/wall-bookshelf.png")}
+                    className="bookshelf_img"
+                    alt="bookshelf_img"
+                  />
+                </div>
+                <div className="books">
+                  {books_five.map((books) => {
+                    return (
+                      <Book
+                        key={books.rank}
+                        cover={books.coverLargeUrl}
+                        rank={books.rank}
+                        title={books.title}
+                        description={books.description}
+                        priceStandard={books.priceStandard}
+                        priceSales={books.priceSales}
+                        author={books.author}
+                        sale={books.link}
+                        customerReviewRank={books.customerReviewRank}
+                      ></Book>
+                    );
+                  })}
+                  <img
+                    src={require("../images/wall-bookshelf.png")}
+                    className="bookshelf_img"
+                    alt="bookshelf_img"
+                  />
+                </div>
               </div>
-              <div className="books">
-                {books_three.map((books) => {
-                  return (
-                    <Book
-                      key={books.rank}
-                      cover={books.coverLargeUrl}
-                      rank={books.rank}
-                      title={books.title}
-                      description={books.description}
-                      priceStandard={books.priceStandard}
-                      priceSales={books.priceSales}
-                      author={books.author}
-                      sale={books.link}
-                      customerReviewRank={books.customerReviewRank}
-                    ></Book>
-                  );
-                })}
-                <img
-                  src={require("../images/wall-bookshelf.png")}
-                  className="bookshelf_img"
-                  alt="bookshelf_img"
-                />
-              </div>
-              <div className="books">
-                {books_five.map((books) => {
-                  return (
-                    <Book
-                      key={books.rank}
-                      cover={books.coverLargeUrl}
-                      rank={books.rank}
-                      title={books.title}
-                      description={books.description}
-                      priceStandard={books.priceStandard}
-                      priceSales={books.priceSales}
-                      author={books.author}
-                      sale={books.link}
-                      customerReviewRank={books.customerReviewRank}
-                    ></Book>
-                  );
-                })}
-                <img
-                  src={require("../images/wall-bookshelf.png")}
-                  className="bookshelf_img"
-                  alt="bookshelf_img"
-                />
+              <div className="bookshelf_two">
+                <div className="books">
+                  {books_two.map((books) => {
+                    return (
+                      <Book
+                        key={books.rank}
+                        cover={books.coverLargeUrl}
+                        rank={books.rank}
+                        title={books.title}
+                        description={books.description}
+                        priceStandard={books.priceStandard}
+                        priceSales={books.priceSales}
+                        author={books.author}
+                        sale={books.link}
+                        customerReviewRank={books.customerReviewRank}
+                      ></Book>
+                    );
+                  })}
+                  <img
+                    src={require("../images/wall-bookshelf.png")}
+                    className="bookshelf_img"
+                    alt="bookshelf_img"
+                  />
+                </div>
+                <div className="books">
+                  {books_four.map((books) => {
+                    return (
+                      <Book
+                        key={books.rank}
+                        cover={books.coverLargeUrl}
+                        rank={books.rank}
+                        title={books.title}
+                        description={books.description}
+                        priceStandard={books.priceStandard}
+                        priceSales={books.priceSales}
+                        author={books.author}
+                        sale={books.link}
+                        customerReviewRank={books.customerReviewRank}
+                      ></Book>
+                    );
+                  })}
+                  <img
+                    src={require("../images/wall-bookshelf.png")}
+                    className="bookshelf_img"
+                    alt="bookshelf_img"
+                  />
+                </div>
+                <div className="books">
+                  {books_six.map((books) => {
+                    return (
+                      <Book
+                        key={books.rank}
+                        cover={books.coverLargeUrl}
+                        rank={books.rank}
+                        title={books.title}
+                        description={books.description}
+                        priceStandard={books.priceStandard}
+                        priceSales={books.priceSales}
+                        author={books.author}
+                        sale={books.link}
+                        customerReviewRank={books.customerReviewRank}
+                      ></Book>
+                    );
+                  })}
+                  <img
+                    src={require("../images/wall-bookshelf.png")}
+                    className="bookshelf_img"
+                    alt="bookshelf_img"
+                  />
+                </div>
               </div>
             </div>
-            <div className="bookshelf_two">
-              <div className="books">
-                {books_two.map((books) => {
-                  return (
-                    <Book
-                      key={books.rank}
-                      cover={books.coverLargeUrl}
-                      rank={books.rank}
-                      title={books.title}
-                      description={books.description}
-                      priceStandard={books.priceStandard}
-                      priceSales={books.priceSales}
-                      author={books.author}
-                      sale={books.link}
-                      customerReviewRank={books.customerReviewRank}
-                    ></Book>
-                  );
-                })}
-                <img
-                  src={require("../images/wall-bookshelf.png")}
-                  className="bookshelf_img"
-                  alt="bookshelf_img"
-                />
-              </div>
-              <div className="books">
-                {books_four.map((books) => {
-                  return (
-                    <Book
-                      key={books.rank}
-                      cover={books.coverLargeUrl}
-                      rank={books.rank}
-                      title={books.title}
-                      description={books.description}
-                      priceStandard={books.priceStandard}
-                      priceSales={books.priceSales}
-                      author={books.author}
-                      sale={books.link}
-                      customerReviewRank={books.customerReviewRank}
-                    ></Book>
-                  );
-                })}
-                <img
-                  src={require("../images/wall-bookshelf.png")}
-                  className="bookshelf_img"
-                  alt="bookshelf_img"
-                />
-              </div>
-              <div className="books">
-                {books_six.map((books) => {
-                  return (
-                    <Book
-                      key={books.rank}
-                      cover={books.coverLargeUrl}
-                      rank={books.rank}
-                      title={books.title}
-                      description={books.description}
-                      priceStandard={books.priceStandard}
-                      priceSales={books.priceSales}
-                      author={books.author}
-                      sale={books.link}
-                      customerReviewRank={books.customerReviewRank}
-                    ></Book>
-                  );
-                })}
-                <img
-                  src={require("../images/wall-bookshelf.png")}
-                  className="bookshelf_img"
-                  alt="bookshelf_img"
-                />
+
+            {/* pad */}
+            <div className="media_pad bookshelf">
+              <div className="bookshelf_one">
+                <div className="books">
+                  {books_one.map((books) => {
+                    return (
+                      <Book
+                        key={books.rank}
+                        cover={books.coverLargeUrl}
+                        rank={books.rank}
+                        title={books.title}
+                        description={books.description}
+                        priceStandard={books.priceStandard}
+                        priceSales={books.priceSales}
+                        author={books.author}
+                        sale={books.link}
+                        customerReviewRank={books.customerReviewRank}
+                      ></Book>
+                    );
+                  })}
+                  <img
+                    src={require("../images/wall-bookshelf.png")}
+                    className="bookshelf_img"
+                    alt="bookshelf_img"
+                  />
+                </div>
+                <div className="books">
+                  {books_two.map((books) => {
+                    return (
+                      <Book
+                        key={books.rank}
+                        cover={books.coverLargeUrl}
+                        rank={books.rank}
+                        title={books.title}
+                        description={books.description}
+                        priceStandard={books.priceStandard}
+                        priceSales={books.priceSales}
+                        author={books.author}
+                        sale={books.link}
+                        customerReviewRank={books.customerReviewRank}
+                      ></Book>
+                    );
+                  })}
+                  <img
+                    src={require("../images/wall-bookshelf.png")}
+                    className="bookshelf_img"
+                    alt="bookshelf_img"
+                  />
+                </div>
+                <div className="books">
+                  {books_three.map((books) => {
+                    return (
+                      <Book
+                        key={books.rank}
+                        cover={books.coverLargeUrl}
+                        rank={books.rank}
+                        title={books.title}
+                        description={books.description}
+                        priceStandard={books.priceStandard}
+                        priceSales={books.priceSales}
+                        author={books.author}
+                        sale={books.link}
+                        customerReviewRank={books.customerReviewRank}
+                      ></Book>
+                    );
+                  })}
+                  <img
+                    src={require("../images/wall-bookshelf.png")}
+                    className="bookshelf_img"
+                    alt="bookshelf_img"
+                  />
+                </div>
+                <div className="books">
+                  {books_four.map((books) => {
+                    return (
+                      <Book
+                        key={books.rank}
+                        cover={books.coverLargeUrl}
+                        rank={books.rank}
+                        title={books.title}
+                        description={books.description}
+                        priceStandard={books.priceStandard}
+                        priceSales={books.priceSales}
+                        author={books.author}
+                        sale={books.link}
+                        customerReviewRank={books.customerReviewRank}
+                      ></Book>
+                    );
+                  })}
+                  <img
+                    src={require("../images/wall-bookshelf.png")}
+                    className="bookshelf_img"
+                    alt="bookshelf_img"
+                  />
+                </div>
+                <div className="books">
+                  {books_five.map((books) => {
+                    return (
+                      <Book
+                        key={books.rank}
+                        cover={books.coverLargeUrl}
+                        rank={books.rank}
+                        title={books.title}
+                        description={books.description}
+                        priceStandard={books.priceStandard}
+                        priceSales={books.priceSales}
+                        author={books.author}
+                        sale={books.link}
+                        customerReviewRank={books.customerReviewRank}
+                      ></Book>
+                    );
+                  })}
+                  <img
+                    src={require("../images/wall-bookshelf.png")}
+                    className="bookshelf_img"
+                    alt="bookshelf_img"
+                  />
+                </div>
+                <div className="books">
+                  {books_six.map((books) => {
+                    return (
+                      <Book
+                        key={books.rank}
+                        cover={books.coverLargeUrl}
+                        rank={books.rank}
+                        title={books.title}
+                        description={books.description}
+                        priceStandard={books.priceStandard}
+                        priceSales={books.priceSales}
+                        author={books.author}
+                        sale={books.link}
+                        customerReviewRank={books.customerReviewRank}
+                      ></Book>
+                    );
+                  })}
+                  <img
+                    src={require("../images/wall-bookshelf.png")}
+                    className="bookshelf_img"
+                    alt="bookshelf_img"
+                  />
+                </div>
               </div>
             </div>
           </div>
